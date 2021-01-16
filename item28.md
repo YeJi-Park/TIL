@@ -10,7 +10,7 @@
 | 2    | 실체화됨          | 런타임에 타입 정보가 소거<br />(제네릭 도입 전과의 호환을 위해) |
 
 > 1) 배열: sub가 super의 하위 타입이라면 sub[]는 super[]의 하위 타입
->    리스트: list<sub>와 list<super>는 다른 타입
+>    리스트: list\sub>와 list\<super>는 다른 타입
 >
 > ```java
 > Object[] obArr = new Long[1];
@@ -26,7 +26,7 @@
 
 - 배열은 제네릭 타입, 매개변수화 타입, 타입 매개변수로 사용할 수 없음
 
-  > new List<E>[], new List<String>[], new E[] 같은 사용 X
+  > new List\<E>[], new List<\String>[], new E[] 같은 사용 X
 
   → **타입 안전하지 않기 때문** 
 
@@ -42,7 +42,7 @@ String s = strLists[0].get(0);				  // (5)
 1. 제네릭 배열 생성
 2. 원소가 Integer 1개인 리스트 생성
 3. Object 배열에 List 배열 할당: List는 Object의 서브타입이므로 가능
-4. List<Integer> 를 Object 배열에 저장: List는 런타임에 타입이 소거되므로 가능
+4. List\<Integer> 를 Object 배열에 저장: List는 런타임에 타입이 소거되므로 가능
 5. ClassCastException 발생
 
 ------
@@ -51,7 +51,7 @@ String s = strLists[0].get(0);				  // (5)
 
 - 실체화되지 않아 런타임에 컴파일타임보다 더 적은 타입 정보를 갖는 타입
 
-  > E, List<E>, List<String> 등 
+  > E, List\<E>, List\<String> 등 
 
 - 매개변수화 타입 중에는 비한정적 와일드카드만 실체화 가능
 

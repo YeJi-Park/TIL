@@ -4,10 +4,12 @@
 
 - 매개변수화 타입은 불공변
 
-  > List<String>는 List<Object>의 하위타입이 아님
+  > List\<String>는 List\<Object>의 하위타입이 아님
   >
   > 리스코프 치환 원칙 ... ?
 
+  
+  
   → 한정적 와일드카드를 사용해 유연성을 높일 수 있음
 
 -----
@@ -25,7 +27,7 @@ public void pushAll(Iterable<E> src) {
 
 - E의 하위타입이 들어올 경우 incompatible types 오류 발생
 
-  > Stack<Number>.pushAll(Integer.valueOf(3)
+  > Stack\<Number>.pushAll(Integer.valueOf(3)
 
   -> 매개변수를 E의 iterable이 아니라 **E의 하위타입의 iterable**이 되도록 수정
 
@@ -61,7 +63,7 @@ public void popAll(Collection<? super E> dest) {
 
 - 컴파일러가 타입을 제대로 추론하지 못할 때 사용
 
-  > Set<Number> numbers = Union.<Number>union(integers, doubles);
+  > Set\<Number> numbers = Union.\<Number>union(integers, doubles);
 
 - JAVA 8 이전엔 컴파일러의 타입추론 능력이 약해서 사용됨
 

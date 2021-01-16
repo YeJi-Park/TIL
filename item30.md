@@ -80,8 +80,8 @@ public final class String
 }
 ```
 
-- T: Comparable<T>를 구현한 타입이 비교할 수 있는 원소의 타입
+- T: Comparable\<T>를 구현한 타입이 비교할 수 있는 원소의 타입
 
-  > String은 Comparable<String>을 구현했기 때문에 String 자신과 비교 가능
+  > String은 Comparable\<String>을 구현했기 때문에 String 자신과 비교 가능
 
   

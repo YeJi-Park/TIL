@@ -11,8 +11,8 @@
   - 제네릭이 도입되기 전의 코드와의 호환을 위한 목적
 - **비한정적 와일드 카드 타입**(unbouded wildcard type): 
 
-> List<E>: 원소의 타입을 나타내는 타입 매개변수 E를 받는 List 인터페이스
-> List<String>: 원소로 String을 받는 List의 매개변수화 타입
+> List\<E>: 원소의 타입을 나타내는 타입 매개변수 E를 받는 List 인터페이스
+> List\<String>: 원소로 String을 받는 List의 매개변수화 타입
 > List: List의 로 타입
 >
 > List<?>: List의 비한정적 와일드카드 타입
@@ -44,7 +44,7 @@ for( Iterator i = stamps.iterator(); i.hasNext(); ){
 
    > List.Class  (O)
    >
-   > List<String>.Class  (X)
+   > List\<String>.Class  (X)
 
 2. Instanceof 연산자: 런타임에는 제네릭이 지워지기 때문에 적용되지 않음
 
@@ -100,7 +100,7 @@ private static void unsafeAdd_2(List<String> list, Object o){
 }
 ```
 
-List<String>은 List<Object>와 다르기때문에 컴파일 타임에 타입 체킹 가능
+List\<String>은 List\<Object>와 다르기때문에 컴파일 타임에 타입 체킹 가능
 → **타입 안정성을 위해 매개변수화 타입을 사용해야 함**
 
 
@@ -124,5 +124,5 @@ List<String>은 List<Object>와 다르기때문에 컴파일 타임에 타입 �
 >
 > iterable 내부의 타입이 중요하지 않은 경우의 작업에 추상화시켜 사용가능
 
-ref. What is the use and point of unbound wildcards generics in Java? https://stackoverflow.com/questions/7671072/what-is-the-use-and-point-of-unbound-wildcards-generics-in-java 
+ref. [ What is the use and point of unbound wildcards generics in Java?](https://stackoverflow.com/questions/7671072/what-is-the-use-and-point-of-unbound-wildcards-generics-in-java)
 
