@@ -4,7 +4,7 @@
 
 #### '매핑하지 않기' 전략
 
-![매핑하지 않기 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_1.PNG)
+![매핑하지 않기 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_1.png)
 
 - `AccountController`(웹 계층)가 `SendMoneyUseCase` 인터페이스(어플리케이션 계층)를 호출할 때 `Account` 객체를 인자로 넘겨주면서 같은 모델을 사용함
 
@@ -22,7 +22,7 @@
 
 #### '양방향' 매핑 전략
 
-![양방향 매핑 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_2.PNG)
+![양방향 매핑 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_2.png)
 
 - 각 계층마다 전용 모델을 사용함(웹/어플리케이션/영속성)
 - 장점
@@ -34,7 +34,7 @@
 
 #### '완전' 매핑 전략
 
-![완전 매핑 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_3.PNG)
+![완전 매핑 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_3.png)
 
 - **연산마다** 전용 모델을 사용하고, 계층 경계를 넘어 통신할 때에는 각 작업에 특화된 커맨드 모델을 사용함
 - 유스케이스마다 다른 커맨드 모델을 사용하기 때문에 여러 유스케이스를 함께 다루는 경우에 비해 유지보수가 훨씬 쉬움
@@ -44,7 +44,7 @@
 
 #### '단방향' 매핑 전략
 
-![단방향 매핑 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_4.PNG)
+![단방향 매핑 전략](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_4.png)
 
 - 모든 계층의 모델 같은 인터페이스를 구현하고, 인터페이스에서 Getter를 제공해서 모델을 캡슐화함
 - 인커밍/아웃고잉 포트에서 인터페이스를 입력/반환으로 사용하면 매핑없이 전달할 수 있음

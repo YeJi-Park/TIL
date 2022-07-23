@@ -7,7 +7,7 @@
 - 도메인 코드가 바깥 계층의 변경으로부터 안전하게 하기 위해서 의존성과 인스턴스를 생성하는 책임의 주체가 중요함
   💡 유스케이스는 인터페이스만 알아야 하고, 런타임에 구현을 제공받아야 함
 
-![설정 컴포넌트](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/08_1.PNG)
+![설정 컴포넌트](https://github.com/YeJi-Park/TIL/blob/main/Get-your-hands-dirty-on-clean-architecture/images/09_1.png)
 
 - 모든 클래스에 의존성을 갖는 **설정 컴포넌트**에서 객체 인스턴스를 생성할 책임을 가지고 있어야 함
 - 모든 내부 계층에 접근하는 원의 가장 바깥쪽에 위치하고, 어플리케이션의 제어를 위해 설정 파라미터에도 접근이 가능해야 함
