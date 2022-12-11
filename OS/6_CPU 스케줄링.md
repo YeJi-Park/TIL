@@ -18,9 +18,9 @@ CPU는 일반적으로 시스템 내에 1개이므로 효율적으로 관리되�
 
 
 
-[CPU 버스트-I/O 버스트](https://github.com/YeJi-Park/TIL/blob/main/OS/images/ch6_01.PNG)
+![CPU 버스트-I/O 버스트](https://github.com/YeJi-Park/TIL/blob/main/OS/images/ch6_01.PNG)
 
-[CPU 버스트 분포](https://github.com/YeJi-Park/TIL/blob/main/OS/images/ch6_02.PNG)
+![CPU 버스트 분포](https://github.com/YeJi-Park/TIL/blob/main/OS/images/ch6_02.PNG)
 
 프로그램마다 CPU를 사용하는 패턴이 다르므로 효율적으로 CPU를 사용하기 위해 스케줄링이 중요함
 
@@ -123,7 +123,7 @@ CPU 스케줄러: 준비 상태 프로세스 중에 어떤 프로세스에 CPU�
 - 큐의 수, 큐의 스케줄링 알고리즘, 상위 큐로 승격시키는 기준 등에 따라 MLFQ가 정의됨
 - MLQ는 기아현상이 발생할 수 있음 → 에이징을 구현한 것이 MLFQ
 
-[MLFQ](https://github.com/YeJi-Park/TIL/blob/main/OS/images/ch6_03.PNG)
+![MLFQ](https://github.com/YeJi-Park/TIL/blob/main/OS/images/ch6_03.PNG)
 
 - 대표적인 MLFQ 방식
   1) 처음 도착 시에는 우선순위가 높은 큐에 배정
